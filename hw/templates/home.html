@@ -6,7 +6,7 @@
 <h1><b>WEATHER</b></h1><br>
 
 <form>
-  <input class="form-control  form-control-lg-sm-2" name="city" type="text" placeholder="Location">
+    <input class="form-control  form-control-lg" name="city" type="text" placeholder="Location">
 
     <br>
     <button type="submit" value="Submit" class="btn btn-dark btn-lg"> <i class="fa fa-search" aria-hidden="true"></i> <b> Click to Search</b></button>
@@ -40,9 +40,9 @@
 <div class="jumbotron mt-3 bg-dark shadow-lg">
     <div class="container">
         <div style="text-align: left;">
-        <h5><i class="far fa-newspaper"></i> News #{{i+1}}: <b><a href="{{news.urlList[i]}}" target="_blank">{{news.titleList[i]}}</a></b></h5> <br>
-        <img src="{{news.urlToImageList[i]}}" alt="NewsImage" class="center"> <br>
-        <hr style="border-top: 1px solid whitesmoke;">
+        <h2 style="text-align: center;"><a href="{{news.urlList[i]}}" target="_blank">{{news.titleList[i]}}</a></b></h2> <br>
+          <img src="{{news.urlToImageList[i]}}" alt="NewsImage" style="width: 100%;">
+        <hr style="border-top: 3px solid whitesmoke;">
         <p>{{news.descriptionList[i]}} <a href="{{news.urlList[i]}}" target="_blank">Read more</a></p>
         </div>
     </div>

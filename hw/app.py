@@ -28,7 +28,7 @@ def home():
     news = get_news(news)
     return render_template("home.html", weather=weather, news=news)
 
-@app.route('/searchnews')
+@app.route('/news')
 def searchnews():
     news = request.args.get('news')
     if not news:
