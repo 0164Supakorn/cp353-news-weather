@@ -37,4 +37,8 @@ def bmi2():
     return jsonify(return_data)
 
 
+app.env="development"
+app.run(debug=True)
+
+
 

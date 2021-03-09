@@ -11,7 +11,7 @@ ITUNE_FEEDS = {'new-release': 'https://rss.itunes.apple.com/api/v1/us/apple-musi
 
 
 @app.route("/<feed_type>")
-def get_feed(feed_type='coming-soon'):
+def get_feed(feed_type='coming-soon',feed_type2='top-songs'):
     feed = feedparser.parse(ITUNE_FEEDS[feed_type])
     return render_template("home.html", items=feed['entries'])
 
